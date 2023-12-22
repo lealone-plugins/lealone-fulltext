@@ -24,6 +24,13 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
+            <groupId>org.lealone</groupId>
+            <artifactId>lealone-client</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-core</artifactId>
             <version>9.9.1</version>
@@ -86,6 +93,11 @@
                                     </excludes>
                                 </filter>
                             </filters>
+                            <artifactSet>
+                                <includes>
+                                    <include>org.apache.lucene:*</include>
+                                </includes>
+                            </artifactSet>
                             <outputFile>target/lealone-fulltext-plugin-${project.version}.jar</outputFile>
                         </configuration>
                     </execution>
