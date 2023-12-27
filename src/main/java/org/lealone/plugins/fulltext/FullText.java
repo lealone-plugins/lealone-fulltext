@@ -29,6 +29,7 @@ import org.lealone.common.exceptions.DbException;
 import org.lealone.common.util.IOUtils;
 import org.lealone.common.util.StringUtils;
 import org.lealone.common.util.Utils;
+import org.lealone.db.Constants;
 import org.lealone.db.api.Trigger;
 import org.lealone.db.result.SimpleResultSet;
 import org.lealone.db.session.ServerSession;
@@ -643,7 +644,7 @@ public class FullText {
     protected static ResultSet search(Connection conn, String text, int limit, int offset, boolean data)
             throws SQLException {
         SimpleResultSet result = createResultSet(data);
-        if (conn.getMetaData().getURL().startsWith("jdbc:columnlist:")) {
+        if (conn.getMetaData().getURL().startsWith(Constants.CONN_URL_COLUMNLIST)) {
             // this is just to query the result set columns
             return result;
         }

@@ -5,12 +5,15 @@
  */
 package org.lealone.plugins.fulltext;
 
-import org.junit.Test;
-import org.lealone.test.TestBase;
+import org.lealone.main.Lealone;
 
-public class FullTextTest extends TestBase {
+public class FullTextTest { // extends TestBase {
 
-    @Test
-    public void run() {
+    // @Test
+    // public void run() {
+    // }
+
+    public static void main(String[] args) {
+        Lealone.main(args);
     }
 }
