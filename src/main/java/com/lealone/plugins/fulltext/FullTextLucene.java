@@ -3,7 +3,7 @@
  * and the EPL 1.0 (https://h2database.com/html/license.html).
  * Initial Developer: H2 Group
  */
-package org.lealone.plugins.fulltext;
+package com.lealone.plugins.fulltext;
 
 import java.io.IOException;
 import java.nio.file.Paths;
@@ -38,16 +38,16 @@ import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.store.ByteBuffersDirectory;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
-import org.lealone.client.jdbc.JdbcConnection;
-import org.lealone.common.util.StringUtils;
-import org.lealone.common.util.Utils;
-import org.lealone.db.Constants;
-import org.lealone.db.api.Trigger;
-import org.lealone.db.result.SimpleResultSet;
-import org.lealone.db.session.ServerSession;
-import org.lealone.sql.SQLParser;
-import org.lealone.sql.expression.ExpressionColumn;
-import org.lealone.storage.fs.FileUtils;
+import com.lealone.client.jdbc.JdbcConnection;
+import com.lealone.common.util.StringUtils;
+import com.lealone.common.util.Utils;
+import com.lealone.db.Constants;
+import com.lealone.db.api.Trigger;
+import com.lealone.db.result.SimpleResultSet;
+import com.lealone.db.session.ServerSession;
+import com.lealone.sql.SQLParser;
+import com.lealone.sql.expression.ExpressionColumn;
+import com.lealone.storage.fs.FileUtils;
 
 /**
  * This class implements the full text search based on Apache Lucene.
@@ -59,7 +59,7 @@ public class FullTextLucene extends FullText {
      * Whether the text content should be stored in the Lucene index.
      */
     protected static final boolean STORE_DOCUMENT_TEXT_IN_INDEX = Utils
-            .getProperty("h2.storeDocumentTextInIndex", false);
+            .getProperty("lealone.storeDocumentTextInIndex", false);
 
     private static final HashMap<String, IndexAccess> INDEX_ACCESS = new HashMap<>();
     private static final String TRIGGER_PREFIX = "FTL_";

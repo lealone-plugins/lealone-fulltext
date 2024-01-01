@@ -22,4 +22,4 @@
 
 全文检索功能的用法跟 h2 数据库一样，可以参考文档: https://www.h2database.com/html/tutorial.html#fulltext
 
-把文档中的 org.h2.fulltext.FullText 替换成 org.lealone.plugins.fulltext.FullText 即可
+把文档中的 org.h2.fulltext.FullText 替换成 com.lealone.plugins.fulltext.FullText 即可

@@ -3,7 +3,7 @@
  * and the EPL 1.0 (https://h2database.com/html/license.html).
  * Initial Developer: H2 Group
  */
-package org.lealone.plugins.fulltext;
+package com.lealone.plugins.fulltext;
 
 /**
  * The settings of one full text search index.

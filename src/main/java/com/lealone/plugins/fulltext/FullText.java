@@ -3,7 +3,7 @@
  * and the EPL 1.0 (https://h2database.com/html/license.html).
  * Initial Developer: H2 Group
  */
-package org.lealone.plugins.fulltext;
+package com.lealone.plugins.fulltext;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -24,21 +24,21 @@ import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.UUID;
 
-import org.lealone.client.jdbc.JdbcConnection;
-import org.lealone.common.exceptions.DbException;
-import org.lealone.common.util.IOUtils;
-import org.lealone.common.util.StringUtils;
-import org.lealone.common.util.Utils;
-import org.lealone.db.Constants;
-import org.lealone.db.api.Trigger;
-import org.lealone.db.result.SimpleResultSet;
-import org.lealone.db.session.ServerSession;
-import org.lealone.sql.SQLParser;
-import org.lealone.sql.expression.Expression;
-import org.lealone.sql.expression.ExpressionColumn;
-import org.lealone.sql.expression.ValueExpression;
-import org.lealone.sql.expression.condition.Comparison;
-import org.lealone.sql.expression.condition.ConditionAndOr;
+import com.lealone.client.jdbc.JdbcConnection;
+import com.lealone.common.exceptions.DbException;
+import com.lealone.common.util.IOUtils;
+import com.lealone.common.util.StringUtils;
+import com.lealone.common.util.Utils;
+import com.lealone.db.Constants;
+import com.lealone.db.api.Trigger;
+import com.lealone.db.result.SimpleResultSet;
+import com.lealone.db.session.ServerSession;
+import com.lealone.sql.SQLParser;
+import com.lealone.sql.expression.Expression;
+import com.lealone.sql.expression.ExpressionColumn;
+import com.lealone.sql.expression.ValueExpression;
+import com.lealone.sql.expression.condition.Comparison;
+import com.lealone.sql.expression.condition.ConditionAndOr;
 
 /**
  * This class implements the native full text search.

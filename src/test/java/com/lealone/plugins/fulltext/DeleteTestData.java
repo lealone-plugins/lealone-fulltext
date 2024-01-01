@@ -3,13 +3,13 @@
  * Licensed under the Server Side Public License, v 1.
  * Initial Developer: zhh
  */
-package org.lealone.plugins.fulltext;
+package com.lealone.plugins.fulltext;
 
 import java.io.File;
 import java.io.IOException;
 
-import org.lealone.storage.fs.FileUtils;
-import org.lealone.test.TestBase;
+import com.lealone.storage.fs.FileUtils;
+import com.lealone.test.TestBase;
 
 public class DeleteTestData {
 
