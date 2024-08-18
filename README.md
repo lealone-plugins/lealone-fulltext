@@ -13,12 +13,12 @@
 
 运行 `mvn clean package -Dmaven.test.skip=true`
 
-生成 jar 包 `target\lealone-fulltext-plugin-6.0.0.jar`
+生成 jar 包 `target\lealone-fulltext-plugin-6.0.1.jar`
 
 
 ## 使用插件
 
-把 lealone-fulltext-plugin-6.0.0.jar 加到类路径
+把 lealone-fulltext-plugin-6.0.1.jar 加到类路径
 
 全文检索功能的用法跟 h2 数据库一样，可以参考文档: https://www.h2database.com/html/tutorial.html#fulltext
 
